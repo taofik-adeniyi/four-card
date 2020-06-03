@@ -5,12 +5,13 @@ body {
 }
 .container {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     "header header header"
     ". team-builder ."
-    "supervisor . calculator"
+    "supervisor team-builder calculator"
+    "supervisor karma calculator"
     ". karma ."
     "footer footer footer";
 }
