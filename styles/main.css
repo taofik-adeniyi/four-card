@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    ". team-builder ."
+    "supervisor . calculator"
+    ". karma ."
+    "footer footer footer";
+}
+.cards {
+    width: 300px;
+    height: 230px;
+    border: 1px groove yellowgreen;
+    margin: 5px 0 5px 5px;
+    box-shadow: 0 2px 10px hsl(229, 6%, 66%);
+}
+.red {
+    border-top: 5px groove hsl(0, 78%, 62%);
+}
+.orange {
+    border-top: 5px groove hsl(34, 97%, 64%);
+}
+.blue {
+    border-top: 5px groove hsl(212, 86%, 64%);
+}
+.cyan {
+    border-top: 5px groove hsl(180, 62%, 55%);
+}
+img {
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 40px;
+    display: block;
+}
+section {
+    padding: 5px 0 0 20px;
+}
+section h2 {
+    font-weight: 600;
+    color: hsl(0, 0%, 98%);
+}
+.header {
+    grid-area: header;
+    text-align: center;
+}
+.header h1 span {
+    display: block;
+}
+.supervisor {
+    grid-area: supervisor;
+}
+.team-builder {
+    grid-area: team-builder;
+}
+.calculator {
+    grid-area: calculator;
+}
+.karma {
+    grid-area: karma;
+}
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
