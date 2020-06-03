@@ -45,7 +45,6 @@ section {
 }
 section h2 {
     font-weight: 600;
-    color: hsl(0, 0%, 98%);
 }
 .header {
     grid-area: header;
@@ -56,15 +55,21 @@ section h2 {
 }
 .supervisor {
     grid-area: supervisor;
+    margin-left: 180px;
 }
 .team-builder {
     grid-area: team-builder;
+    margin-left: 30px;
+    margin-top: 35px;
 }
 .calculator {
     grid-area: calculator;
+    margin-left: -40px;
 }
 .karma {
     grid-area: karma;
+    margin-left: 30px;
+    margin-top: -20px;
 }
 .footer {
     grid-area: footer;
